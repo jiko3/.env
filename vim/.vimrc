@@ -28,6 +28,9 @@ Plug 'mileszs/ack.vim'
 call plug#end()
 filetype plugin indent on    " required
 
+"easymotion
+let g:EasyMotion_leader_key='<Space>'
+
 "nerdtree settings
 let g:NERDTreeMapOpenSplit = 'a'
 
