@@ -14,6 +14,8 @@ Plugin 'SrcExpl'
 Plugin 'wesleyche/Trinity'
 Plugin 'wolfpython/cscope_map.vim'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'easymotion/vim-easymotion'
+Bundle 'majutsushi/tagbar'
 call vundle#end()            " required
 
 "plug plugin management
@@ -60,15 +62,20 @@ nnoremap <space><CR> :CodeQuery Symbol<CR>
 nnoremap <space>t :CodeQuery Caller<CR>:CodeQueryFilter test_<CR>
 
 "key mappings
-nmap <F8> :TrinityToggleAll<CR>
-nmap <F2> :TrinityToggleTagList<CR> 
-nmap <F3> :TrinityToggleNERDTree<CR> 
-nmap <F4> :TrinityToggleSourceExplorer<CR> 
-nmap <S-s> :w<CR>
-" switch between big5 & utf8
-map <F5> :set tenc=big5<cr>
-map <F6> :set tenc=utf-8<cr>
-map <F7> : set nu!<BAR>set nonu?<CR>
+nnoremap <silent> <F8> :NERDTree<CR>
+nmap <F9> :TagbarToggle<CR>
+map <F10> :Tlist<CR>
+map <F12> :!ctags -R --c-kinds=+p --c++-kinds=+p --fields=+iaS --extra=+q .; cscope -Rbqk -f cscope.out; <CR>
+"by jiko
+"nmap <F8> :TrinityToggleAll<CR>
+"nmap <F2> :TrinityToggleTagList<CR> 
+"nmap <F3> :TrinityToggleNERDTree<CR> 
+"nmap <F4> :TrinityToggleSourceExplorer<CR> 
+"nmap <S-s> :w<CR>
+"" switch between big5 & utf8
+"map <F5> :set tenc=big5<cr>
+"map <F6> :set tenc=utf-8<cr>
+"map <F7> : set nu!<BAR>set nonu?<CR>
 
 " show colume number
 set statusline+=col:\ %c,
