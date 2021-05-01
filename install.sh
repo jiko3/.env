@@ -15,9 +15,9 @@ fi
 echo "using $COPY_TOOL to copy files"
 if [ "$RSYNC" = "Y" ]
 then
-	$COPY_TOOL -av --delete vim/colors ~/.vim
+	$COPY_TOOL -av --delete vim/.vim/colors ~/.vim
 else
-	$COPY_TOOL vim/colors ~/.vim
+	$COPY_TOOL vim/.vim/colors ~/.vim
 fi
 
 ln -sf `pwd`/vim/.vimrc ~/.vimrc
