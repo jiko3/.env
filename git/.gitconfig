@@ -1,7 +1,7 @@
 [user]
-	name = liam.liao
-	mail = liam.liao@latticeworkinc.com
-	email = liam.liao@latticeworkinc.com
+	name = jiko
+	mail = jiko.cs@gmail.com
+	email = jiko.cs@gmail.com
 [http]
 	sslVerify = false
 [core]
@@ -11,7 +11,7 @@
 [alias]
     co = checkout
     ci = commit
-    di = diff
+    d = diff
     st = status
     br = branch
     re = remote
