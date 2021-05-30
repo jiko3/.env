@@ -100,8 +100,8 @@ map <MouseMiddle> <esc>"*p
 "map i <Up>
 "map k <Down>
 "map j <Left>
-map <S-k> <PAGEUP>
-map <S-j> <PAGEDOWN>
+"map <S-k> <PAGEUP>
+"map <S-j> <PAGEDOWN>
 map t <C-w>
 map tk <C-w><Up>
 map tj <C-w><Down>
