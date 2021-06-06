@@ -68,7 +68,11 @@ nnoremap <space>t :CodeQuery Caller<CR>:CodeQueryFilter test_<CR>
 nnoremap <silent> <F8> :NERDTree<CR>
 nmap <F9> :TagbarToggle<CR>
 map <F10> :Tlist<CR>
+" 1. find . -name xxx > cscope.files
+" 2. F12
+" 3. cs add cscope.out (under vim command)
 map <F12> :!ctags -R --c-kinds=+p --c++-kinds=+p --fields=+iaS --extra=+q .; cscope -Rbqk -f cscope.out; <CR>
+
 "by jiko
 "nmap <F8> :TrinityToggleAll<CR>
 "nmap <F2> :TrinityToggleTagList<CR> 
