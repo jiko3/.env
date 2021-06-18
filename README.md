@@ -7,6 +7,9 @@ After they are updated, just install.sh again
 1. sudo apt install curl
 2. sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+   ps.
+   curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+   "     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 
 The ycmd server SHUT DOWN: YcmRestartServer
