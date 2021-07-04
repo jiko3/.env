@@ -72,6 +72,7 @@ map <F10> :Tlist<CR>
 " 2. F12
 " 3. cs add cscope.out (under vim command)
 map <F12> :!ctags -R --c-kinds=+p --c++-kinds=+p --fields=+iaS --extra=+q .; cscope -Rbqk -f cscope.out; <CR>
+" 5. :set tags=/path/to/tags (created by :!ctags -R)
 
 "by jiko
 "nmap <F8> :TrinityToggleAll<CR>
