@@ -68,11 +68,11 @@ nnoremap <space>t :CodeQuery Caller<CR>:CodeQueryFilter test_<CR>
 nnoremap <silent> <F8> :NERDTree<CR>
 nmap <F9> :TagbarToggle<CR>
 map <F10> :Tlist<CR>
-" 1. find . -name xxx > cscope.files
-" 2. F12
-" 3. cs add cscope.out (under vim command)
+" # !!!   should be find "./"
+" 1. find ./ -name "*.h" -o -name "*.c" -o -name "*.m" >cscope.files
 map <F12> :!ctags -R --c-kinds=+p --c++-kinds=+p --fields=+iaS --extra=+q .; cscope -Rbqk -f cscope.out; <CR>
-" 5. :set tags=/path/to/tags (created by :!ctags -R)
+" 2. cs add cscope.out (under vim command)
+" 3. :set tags=/path/to/tags (created by :!ctags -R)
 
 "by jiko
 "nmap <F8> :TrinityToggleAll<CR>
