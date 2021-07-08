@@ -24,6 +24,7 @@ ln -sf `pwd`/vim/.vimrc ~/.vimrc
 rm -rf ~/.vim
 ln -sf `pwd`/vim/.vim ~/.vim
 ln -sf `pwd`/tmux/.tmux.conf ~/.tmux.conf
+ln -sf `pwd`/tmux ~/.tmux
 ln -sf `pwd`/bash/.bashrc ~/.bashrc
 ln -sf `pwd`/bash/.bash_profile ~/.bash_profile
 ln -sf `pwd`/bash/.inputrc ~/.inputrc
@@ -59,6 +60,9 @@ fi
 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+#TPM (tmux plugin manager).
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 #build codequery
 temp_dir=$(mktemp -d)
