@@ -72,6 +72,7 @@ map <F10> :Tlist<CR>
 " 1. find ./ -name "*.h" -name "*.hpp" -o -name "*.c" -o -name "*.cpp" -o -name "*.m" >cscope.files
 map <F12> :!ctags -R --c-kinds=+p --c++-kinds=+p --fields=+iaS --extra=+q .; cscope -Rbqk -f cscope.out; <CR>
 " 2. cs add cscope.out (under vim command)
+" ps. cscope reset (for rebuild cscope)
 " 3. :set tags=/path/to/tags (created by :!ctags -R)
 
 "by jiko
