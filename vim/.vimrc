@@ -35,7 +35,7 @@ let g:EasyMotion_leader_key='<Space>'
 let g:NERDTreeMapOpenSplit = 'a'
 
 "ycm
-let g:ycm_global_ycm_extra_conf = '~/.env/vim/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
+"let g:ycm_global_ycm_extra_conf = '~/.env/vim/.ycm_extra_config.py'
 
 "syntastic settings
 let g:syntastic_always_populate_loc_list = 1
