@@ -78,6 +78,11 @@ map <F12> :!ctags -R --c-kinds=+p --c++-kinds=+p --fields=+iaS --extra=+q .; csc
 " ps. 
 "    :cscope reset (for rebuild cscope)
 "    :set tags=/path/to/tags (created by :!ctags -R)
+" pycscope
+" 1. pycscope -R .
+" # now you have a cscope.out. use it like you would cscope
+" 2. :cs add cscope.out
+" 3. :cs reset
 
 "by jiko
 "nmap <F8> :TrinityToggleAll<CR>
