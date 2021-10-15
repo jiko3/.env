@@ -73,7 +73,7 @@ nmap <F9> :TagbarToggle<CR>
 map <F10> :Tlist<CR>
 " # !!!   should be find "./"
 " 1. find ./ -name "*.h" -o -name "*.hpp" -o -name "*.c" -o -name "*.cpp" -o -name "*.m" >cscope.files
-map <F12> :!ctags -R --c-kinds=+p --c++-kinds=+p --fields=+iaS --extra=+q .; cscope -Rbqk -f cscope.out; set tags=./tags<CR>
+map <F12> :!ctags -R --c-kinds=+p --c++-kinds=+p --fields=+iaS --extra=+q .; cscope -Rbqk -f cscope.out; set tags=./tags<CR>:cs reset<CR><CR>
 " 2. :cs add cscope.out (under vim command)
 " ps. 
 "    :cscope reset (for rebuild cscope)
