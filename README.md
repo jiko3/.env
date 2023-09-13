@@ -12,6 +12,13 @@ After they are updated, just install.sh again
    "     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 
+ycmd experience:
+    1. Try to find the ycmd source Introduction that indicates all REQUIRED and what you should pay attention.
+    https://github.com/ycm-core/YouCompleteMe/issues?q=ycm_extra_conf.py
+    2. Notice all Version-Dependence issues.
+    3. Don't just un-directed google that.
+
+
 The ycmd server SHUT DOWN: YcmRestartServer
 -> should go to ycmd folder, and then sh install.sh to find Err Msg
 1. cmake version
