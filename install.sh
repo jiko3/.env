@@ -1,5 +1,11 @@
 #!/bin/sh
 #This is a script to build a convience enviroment
+
+#run python python code step by step
+##!/usr/bin/env bash
+#set -x
+#trap read debug
+
 cd $(pwd)
 RSYNC=$(which rsync)
 
@@ -42,7 +48,7 @@ then
     sudo apt-get install -y -q python-pip python-dev build-essential 
     sudo pip install --upgrade pip 
     sudo pip install --upgrade virtualenv 
-    sudo pip install --upgrade pycscope
+    sudo python3.6 -m pip install --upgrade pycscope
     sudo apt-get install -y -q vim
     sudo apt-get install -y -q git
     sudo apt-get install -y -q tig
@@ -54,6 +60,9 @@ then
     sudo apt-get install -y -q libsqlite3-dev
     sudo apt-get install -y -q qt4-dev-tools
     sudo apt-get install -y -q libqscintilla2-dev
+    sudo apt-get install qtbase5-dev
+    sudo apt-get install qtdeclarative5-dev
+    sudo apt-get install qttools5-dev
 else
     echo "other linux distrubution"
 fi
