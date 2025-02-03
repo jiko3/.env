@@ -16,6 +16,7 @@ Plugin 'wolfpython/cscope_map.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'easymotion/vim-easymotion'
 Bundle 'majutsushi/tagbar'
+Bundle 'CoderCookE/vim-chatgpt'
 call vundle#end()            " required
 
 "plug plugin management
@@ -25,8 +26,21 @@ Plug 'devjoe/vim-codequery'
 Plug 'kien/ctrlp.vim'
 Plug 'tpope/vim-dispatch'
 Plug 'mileszs/ack.vim'
+Plug 'madox2/vim-ai'
 call plug#end()
 filetype plugin indent on    " required
+
+"ai
+let g:vim_ai_token_file_path = '~/.config/openai.token'
+
+"let g:openai_api_key=
+let g:chat_gpt_max_tokens=2000
+let g:chat_gpt_model='gpt-4'
+let g:chat_gpt_session_mode=0
+let g:chat_gpt_temperature = 0.7
+let g:chat_gpt_lang = 'Chinese'
+let g:chat_gpt_split_direction = 'vertical'
+let g:split_ratio=4
 
 "easymotion
 let g:EasyMotion_leader_key='<Space>'
@@ -131,4 +145,6 @@ set expandtab ts=4 sw=4 ai
 set clipboard=unnamedplus
 "
 "color scheme
-colorscheme wombat256mod
+"colorscheme wombat256mod
+set background=dark
+colorscheme gruvbox
