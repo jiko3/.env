@@ -15,6 +15,8 @@ Plugin 'wesleyche/Trinity'
 Plugin 'wolfpython/cscope_map.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'easymotion/vim-easymotion'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
 Bundle 'majutsushi/tagbar'
 Bundle 'CoderCookE/vim-chatgpt'
 call vundle#end()            " required
@@ -23,16 +25,24 @@ call vundle#end()            " required
 call plug#begin()
 Plug 'Shougo/unite.vim'
 Plug 'devjoe/vim-codequery'
-Plug 'kien/ctrlp.vim'
+Plug 'kien/tabctrlp.vim'
 Plug 'tpope/vim-dispatch'
 Plug 'mileszs/ack.vim'
 Plug 'madox2/vim-ai'
 call plug#end()
 filetype plugin indent on    " required
 
+" Snip
+" Trigger configuration. You need to change this to something other than <tab>
+" if you use one of the following: YouCompleteMe/completion-nvim
+let g:UltiSnipsExpandTrigger="<c-o>"
+let g:UltiSnipsJumpForwardTrigger="<c-z>"
+let g:UltiSnipsJumpBackwardTrigger="<c-x>"
+let g:UltiSnipsEditSplit="vertical"
+let g:UltiSnipsVerbose = 1
+
 "ai
 let g:vim_ai_token_file_path = '~/.config/openai.token'
-
 "let g:openai_api_key=
 let g:chat_gpt_max_tokens=2000
 let g:chat_gpt_model='gpt-4'
