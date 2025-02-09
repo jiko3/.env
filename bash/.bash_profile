@@ -1,5 +1,6 @@
 #!/bin/bash
-export TERM=xterm-color
+#export TERM=xterm-color
+export TERM=xterm-256color
 export CLICOLOR=1
 export GREP_OPTIONS='--color=auto'
 # export LSCOLORS=Exfxcxdxbxegedabagacad
