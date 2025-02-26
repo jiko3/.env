@@ -25,10 +25,11 @@ call vundle#end()            " required
 call plug#begin()
 Plug 'Shougo/unite.vim'
 Plug 'devjoe/vim-codequery'
-Plug 'kien/tabctrlp.vim'
 Plug 'tpope/vim-dispatch'
 Plug 'mileszs/ack.vim'
 Plug 'madox2/vim-ai'
+Plug 'gergap/vim-ollama'
+Plug 'ctrlpvim/ctrlp.vim'
 call plug#end()
 filetype plugin indent on    " required
 
@@ -40,6 +41,11 @@ let g:UltiSnipsJumpForwardTrigger="<c-z>"
 let g:UltiSnipsJumpBackwardTrigger="<c-x>"
 let g:UltiSnipsEditSplit="vertical"
 let g:UltiSnipsVerbose = 1
+
+"ctrlp
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = 'ra'
 
 "ai
 let g:vim_ai_token_file_path = '~/.config/openai.token'
