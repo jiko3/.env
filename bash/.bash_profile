@@ -11,8 +11,6 @@ export HISTCONTROL=ignoredups
 export HISTFILESIZE=100000
 export HISTSIZE=5000
 
-# jiko
-source ~/.bashrc
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 LS_COLORS='di=32:fi=0:ln=31:pi=5:so=5:bd=5:cd=5:or=31:mi=0:ex=35:*.rpm=90'
