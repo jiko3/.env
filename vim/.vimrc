@@ -30,6 +30,7 @@ Plug 'mileszs/ack.vim'
 Plug 'madox2/vim-ai'
 Plug 'gergap/vim-ollama'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'rickhowe/diffchar.vim'
 call plug#end()
 filetype plugin indent on    " required
 
