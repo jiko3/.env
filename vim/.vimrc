@@ -19,6 +19,9 @@ Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Bundle 'majutsushi/tagbar'
 Bundle 'CoderCookE/vim-chatgpt'
+Plugin 'godlygeek/tabular'
+Plugin 'preservim/vim-markdown'
+Plugin 'instant-markdown/vim-instant-markdown'
 call vundle#end()            " required
 
 "plug plugin management
@@ -33,6 +36,9 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'rickhowe/diffchar.vim'
 call plug#end()
 filetype plugin indent on    " required
+
+" vim-instant-markdown
+let g:instant_markdown_browser = "google-chrome --new-window"
 
 " Snip
 " Trigger configuration. You need to change this to something other than <tab>
