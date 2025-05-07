@@ -14,7 +14,10 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+if [ -n "$DISPLAY" ]; then
+    tmux set-environment -g DISPLAY "$DISPLAY"
+fi
+
 if [ -f ~/.bash_profile ]; then
     source ~/.bash_profile
 fi
-
