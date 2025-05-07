@@ -39,6 +39,7 @@ filetype plugin indent on    " required
 
 " vim-instant-markdown
 let g:instant_markdown_browser = "google-chrome --new-window"
+let g:instant_markdown_theme = 'dark'
 
 " Snip
 " Trigger configuration. You need to change this to something other than <tab>
