@@ -32,7 +32,6 @@ Plug 'devjoe/vim-codequery'
 Plug 'tpope/vim-dispatch'
 Plug 'mileszs/ack.vim'
 Plug 'madox2/vim-ai'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'rickhowe/diffchar.vim'
@@ -61,11 +60,6 @@ let g:UltiSnipsJumpForwardTrigger="<c-z>"
 let g:UltiSnipsJumpBackwardTrigger="<c-x>"
 let g:UltiSnipsEditSplit="vertical"
 let g:UltiSnipsVerbose = 1
-
-"ctrlp
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
-let g:ctrlp_working_path_mode = 'ra'
 
 "ai
 let g:vim_ai_token_file_path = '~/.config/openai.token'
