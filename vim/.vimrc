@@ -25,17 +25,29 @@ Plugin 'instant-markdown/vim-instant-markdown'
 call vundle#end()            " required
 
 "plug plugin management
+"Plug 'gergap/vim-ollama'
 call plug#begin()
 Plug 'Shougo/unite.vim'
 Plug 'devjoe/vim-codequery'
 Plug 'tpope/vim-dispatch'
 Plug 'mileszs/ack.vim'
 Plug 'madox2/vim-ai'
-Plug 'gergap/vim-ollama'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'rickhowe/diffchar.vim'
 call plug#end()
 filetype plugin indent on    " required
+
+" Enable fzf in Vim
+set rtp+=/usr/local/opt/fzf  " If manually installed
+" Fuzzy search files (like CtrlP)
+nnoremap <C-p> :Files<CR>
+" Fuzzy search text in files
+nnoremap <C-f> :Rg<CR>
+" Search buffers
+nnoremap <C-b> :Buffers<CR>
+
 
 " vim-instant-markdown
 let g:instant_markdown_browser = "google-chrome --new-window"
