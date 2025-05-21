@@ -138,6 +138,10 @@ map <F12> :!ctags -R --c-kinds=+p --c++-kinds=+p --fields=+iaS --extra=+q .; csc
 "map <F5> :set tenc=big5<cr>
 "map <F6> :set tenc=utf-8<cr>
 "map <F7> : set nu!<BAR>set nonu?<CR>
+nnoremap <F5> :resize +2<CR>
+nnoremap <S-F5> :resize -2<CR>
+nnoremap <F6> :vertical resize +2<CR>
+nnoremap <S-F6> :vertical resize -2<CR>
 
 " show colume number
 set statusline+=col:\ %c,
