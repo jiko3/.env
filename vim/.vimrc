@@ -45,7 +45,7 @@ nnoremap <C-p> :Files<CR>
 " Fuzzy search text in files
 nnoremap <C-f> :Rg<CR>
 " Search buffers
-nnoremap <C-b> :Buffers<CR>
+nnoremap <C-e> :Buffers<CR>
 
 
 " vim-instant-markdown
