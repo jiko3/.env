@@ -250,6 +250,8 @@ export PATH
 #GCC stuff
 #export CC=/usr/bin/gcc-4.0
 #export CXX=/usr/bin/g++-4.0
+export CC=/usr/bin/gcc-13
+export CXX=/usr/bin/g++-13
 
 #postresql
 export PATH=$PATH:/Library/PostgreSQL/9.1/bin/

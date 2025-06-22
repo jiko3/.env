@@ -143,6 +143,41 @@ nnoremap <S-F5> :resize -2<CR>
 nnoremap <F6> :vertical resize +2<CR>
 nnoremap <S-F6> :vertical resize -2<CR>
 
+
+" --- CodeQuery Mappings ---
+
+" Define Leader Key (if you haven't already, common choices are space or comma)
+let mapleader = " "
+
+" Rebuild/Update CodeQuery Database for Python (adjust languages if needed)
+" This can take a while, so you might not want to bind it to a very frequent key
+nnoremap <leader>cqm :CodeQueryMakeDB python<CR>
+" Query symbol under cursor (default CodeQuery action)
+nnoremap <leader>cq :CodeQuery<CR>
+" Find Calls to the symbol under cursor
+nnoremap <leader>cqc :CodeQuery Call<CR>
+" Find Callers of the symbol under cursor
+nnoremap <leader>cqr :CodeQuery Caller<CR> " 'r' for refers/references/callers
+" Find Callees (functions called by) the function under cursor
+nnoremap <leader>cqv :CodeQuery Callee<CR> " 'v' for invoked/verbs
+" Find Class definition under cursor
+"nnoremap <leader>cql :CodeQuery Class<CR> " 'l' for class/layout
+nnoremap <leader>cqd :CodeQuery Class<CR> " 'd' for class/layout
+" List Members of class under cursor
+nnoremap <leader>cqml :CodeQuery Member<CR>
+" Find Parents of class under cursor
+nnoremap <leader>cqpp :CodeQuery Parent<CR>
+" Find Children of class under cursor
+nnoremap <leader>cqpc :CodeQuery Child<CR>
+" Show Quickfix window (if it's hidden)
+nnoremap <leader>cqs :copen<CR>
+" Close Quickfix window
+nnoremap <leader>cqq :cclose<CR>
+" Next/Previous Quickfix item (useful for navigating results)
+nnoremap <leader>cqn :cnext<CR>
+nnoremap <leader>cqp :cprevious<CR>
+" --- End CodeQuery Mappings ---
+
 " show colume number
 set statusline+=col:\ %c,
 " highlight search result
