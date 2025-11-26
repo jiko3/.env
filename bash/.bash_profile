@@ -12,7 +12,7 @@ export HISTFILESIZE=100000
 export HISTSIZE=5000
 
 
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+#eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 LS_COLORS='di=32:fi=0:ln=31:pi=5:so=5:bd=5:cd=5:or=31:mi=0:ex=35:*.rpm=90'
 export LS_COLORS
 # -jiko
@@ -143,9 +143,9 @@ function github() {
 
 
 #bash git completion
-if [ -f `brew --prefix`/etc/bash_completion ]; then
-  . `brew --prefix`/etc/bash_completion
-fi
+#if [ -f `brew --prefix`/etc/bash_completion ]; then
+#  . `brew --prefix`/etc/bash_completion
+#fi
 
       ###############################
       ##         Aliases           ##
@@ -277,7 +277,7 @@ export PATH
 # done
 # }}}
 
-. ~/.nvm/nvm.sh
+#. ~/.nvm/nvm.sh
 
 [[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
 
