@@ -52,6 +52,7 @@ then
     sudo apt-get install -y -q vim
     sudo apt-get install -y -q git
     sudo apt-get install -y -q tig
+    sudo apt-get install -y -q tmux
     sudo apt-get install -y -q exuberant-ctags
     sudo apt-get install -y -q cscope
     sudo apt-get install -y -q cmake
@@ -72,6 +73,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 
 #TPM (tmux plugin manager).
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+git clone https://github.com/tmux-plugins/tmux-resurrect ~/.tmux/plugins/tmux-resurrect
 
 #build codequery
 temp_dir=$(mktemp -d)
