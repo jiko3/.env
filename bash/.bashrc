@@ -23,3 +23,6 @@ fi
 if [ -f ~/.bash_profile ]; then
     source ~/.bash_profile
 fi
+
+# opencode
+export PATH=/home/jiko/.opencode/bin:$PATH
