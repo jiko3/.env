@@ -21,6 +21,10 @@ if [ -n "$DISPLAY" ] && command -v tmux >/dev/null && tmux has-session 2>/dev/nu
 fi
 
 # NOTE: Do NOT source .bash_profile from .bashrc
+# really???? check it
+if [ -f ~/.bash_profile ]; then
+    source ~/.bash_profile
+fi
 # It creates infinite recursion (bash_profile already sources bashrc for login shells)
 
 # Oopencode
