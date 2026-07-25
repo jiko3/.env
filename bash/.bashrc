@@ -20,9 +20,13 @@ if [ -n "$DISPLAY" ] && command -v tmux >/dev/null && tmux has-session 2>/dev/nu
     tmux set-environment -g DISPLAY "$DISPLAY"
 fi
 
-if [ -f ~/.bash_profile ]; then
-    source ~/.bash_profile
-fi
+# NOTE: Do NOT source .bash_profile from .bashrc
+# It creates infinite recursion (bash_profile already sources bashrc for login shells)
 
-# opencode
+# Oopencode
 export PATH=/home/jiko/.opencode/bin:$PATH
+# Gemini-cli
+export GEMINI_API_KEY="AIzaSyBwo0jwQID9w27HZdhMceSDoP1shRfa4kg"
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # 這行會載入 nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # 這是自動補齊功能
